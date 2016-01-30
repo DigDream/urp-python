@@ -20,7 +20,6 @@ def query_grade(args):
     if cookie is None:
         cookie = post_login(args)
         login = True
-        # get_captcha()
 
     html_content = get_content_by_get(url=URL_QUERY_GRADE, cookie=cookie, login=login)
     html_content = unicode(html_content, "gb2312").encode("utf-8")
