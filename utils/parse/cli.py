@@ -31,7 +31,7 @@ def parse_argv():
     status_parser.add_argument('-cookie', dest='cookie', type=str, default=False, help='test')
 
     #   登录接口
-    ccj_parser = subparsers.add_parser('login', help='login')
-    ccj_parser.add_argument('-no', dest='number', type=str, default=False, help='student number')
+    login_parser = subparsers.add_parser('login', help='login')
+    login_parser.add_argument('-no', dest='number', type=str, default=False, help='student number')
 
     return parser.parse_args()

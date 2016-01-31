@@ -2,7 +2,7 @@
 # coding: utf-8
 import logging
 from bs4 import BeautifulSoup
-from utils.handlers.login import get_captcha, post_login
+from utils.handlers.login import post_login
 from utils.netutils import get_content_by_get
 from utils.urls import URL_QUERY_GRADE
 

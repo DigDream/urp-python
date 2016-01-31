@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import logging
-import sys
-import signal
 from utils.handlers.evaluate import evaluate_teacher
-
 from utils.handlers.grade import query_grade
 from utils.handlers.status import query_enrollment_status
 from utils.parse.cli import parse_argv

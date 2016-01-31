@@ -15,6 +15,7 @@ def query_enrollment_status(args):
     :return:
     """
     # TODO 关于复用
+    # TODO 异常的处理
     cookie = args.cookie if args.cookie else None
     login = False
     if cookie is None:
@@ -23,5 +24,4 @@ def query_enrollment_status(args):
 
     html_content = get_content_by_get(url=URL_ENROLLMENT_STATUS, cookie=cookie, login=login)
     soup = BeautifulSoup(html_content, 'html.parser')
-
     logging.info(soup.prettify())

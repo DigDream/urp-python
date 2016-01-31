@@ -33,7 +33,6 @@ def post_login(args):
     """
     get_captcha()
     password = getpass.getpass('password:')
-    # password = raw_input("password: ")
     captcha = raw_input("captcha: ")
     data = {"zjh": args.number, "mm": password, "v_yzm": captcha}
     post_info = urllib.urlencode(data)
