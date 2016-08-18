@@ -10,7 +10,7 @@
 
 安装所需要的python库
 
-BeautifulSoup
+BeautifulSoup4
 
 或者可以通过
 
